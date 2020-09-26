@@ -99,25 +99,31 @@
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.header-block-buger-menu {
+.header-button-buger-menu {
+    display: block;
     width: 23px;
+    height: 3px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.header-block-buger-menu::before {
+.header-button-buger-menu::before {
     content: "";
     display: block;
     height: 3px;
     background-color: white;
 }
 
-.header-block-buger-menu::after {
+.header-button-buger-menu::after {
     content: "";
     display: block;
     height: 3px;
     background-color: white;
 }
 
-.header-block-buger-menu-middle-line {
+.header-button-buger-menu-middle-line {
+    display: block;
     height: 3px;
     background-color: white;
     margin-top: 5px;

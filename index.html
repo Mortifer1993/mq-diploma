@@ -11,7 +11,7 @@
 <body class="body">
 
     <header class="header">
-        <article class="header-block">
+        <div class="header-block">
             <div class="header-block-logo">
                 <div class="header-logo">
                     <img class="header-logo-img" src="svg/noemi-logo.svg" alt="Логотип компании Noemi">
@@ -40,19 +40,18 @@
                         </ul>
                     </nav>
                     <div class="header-block-buger-menu-wrapper">
-                        <label class="header-block-buger-menu-label-chekbox">
-                            <input class="header-block-buger-menu-chekbox" type="checkbox">
-                            <div class="header-block-buger-menu">
-                                <div class="header-block-buger-menu-middle-line"></div>
-                            </div>
+                        <input id="header-block-buger-menu-chekbox" class="header-block-buger-menu-chekbox"
+                            type="checkbox">
+                        <label for="header-block-buger-menu-chekbox" class="header-button-buger-menu">
+                            <span class="header-button-buger-menu-middle-line"></span>
                         </label>
                     </div>
                 </div>
             </div>
             <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
-        </article>
+        </div>
     </header>
-    <aside class="popup _hidden ">
+    <aside class="popup _hidden">
         <div class="popup-block">
             <div class="popup-block-button">
                 <button class="popup-button" type="submit">
@@ -67,17 +66,18 @@
                     <form class="popup-form" method="post">
 
                         <div class="form-block">
-                            <label class="form-block-label">
-                                <div class="popup-block-form-title">
+                            <div class="popup-block-form-title">
+                                <label for="popup-form-select" class="form-block-label">
                                     <span class="popup-form-title">Как часто вы заходите на сайт?</span>
-                                </div>
-                                <select class="popup-form-select">
-                                    <option class="popup-form-option" selected>Почти каждый день</option>
-                                    <option class="popup-form-option">Раз в несколько дней</option>
-                                    <option class="popup-form-option">Раз в несколько недель</option>
-                                    <option class="popup-form-option">Несколько раз в год</option>
-                                </select>
-                            </label>
+                                </label>
+                            </div>
+                            <select id="popup-form-select" class="popup-form-select">
+                                <option class="popup-form-option" selected>Почти каждый день</option>
+                                <option class="popup-form-option">Раз в несколько дней</option>
+                                <option class="popup-form-option">Раз в несколько недель</option>
+                                <option class="popup-form-option">Несколько раз в год</option>
+                            </select>
+
                         </div>
 
                         <div class="form-block">
@@ -101,16 +101,16 @@
                         </div>
 
                         <div class="form-block">
-                            <label class="form-block-label">
-                                <div class="popup-block-form-title">
+                            <div class="popup-block-form-title">
+                                <label for="popup-form-textarea" class="form-block-label">
                                     <span class="popup-form-title">Расскажите, какой контент вы хотели бы видеть
                                         на нашем сайте?</span>
-                                </div>
-                                <div class="popup-form-textarea-block">
-                                    <textarea class="popup-form-textarea"
-                                        placeholder="Может, больше рецептов?"></textarea>
-                                </div>
-                            </label>
+                                </label>
+                            </div>
+                            <div class="popup-form-textarea-block">
+                                <textarea id="popup-form-textarea" class="popup-form-textarea"
+                                    placeholder="Может, больше рецептов?"></textarea>
+                            </div>
                         </div>
 
                         <div class="form-block-button">
